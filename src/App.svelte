@@ -16,7 +16,7 @@
     function easterEgg(){
         count ++;
         if(count >= 5){
-            window.location.href = "../public/vid.mp4";
+            window.location.href = "./vid.mp4";
         }
     }
 
