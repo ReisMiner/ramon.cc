@@ -1,30 +1,52 @@
 <script>
+    import {onMount} from 'svelte'
+    import {fade} from 'svelte/transition'
+    import {fly} from 'svelte/transition'
+    import Cursor from "./components/Cursor.svelte";
+
+    let animate = false
+
+    onMount(() => {
+        animate = true
+    })
 </script>
-
-<main>
-    <div>
-        <h1>Hoi</h1>
-        <h1>I'm <strong>Ramon</strong></h1>
-    </div>
-    <h2>This site is still in development!</h2>
-</main>
-
+{#if animate}
+    <main transition:fade="{{duration:800}}">
+        <div>
+            <h1>Hoi</h1>
+            <h1>I'm <strong>Ramon</strong></h1>
+        </div>
+        <h2 transition:fly="{{y:200}}">This site is still in development!</h2>
+    </main>
+{/if}
+<Cursor/>
 <style>
     h1 {
         margin: 0;
     }
-    strong{
+
+    h2 {
+        position: fixed;
+        bottom: 30px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100vw;
+    }
+
+    strong {
         color: coral;
         font-weight: bold;
     }
-    div{
+
+    div {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
+
     main {
         display: grid;
-        align-content: center;
+        place-items: center;
+        width: 100vw;
         height: 100vh;
     }
 
