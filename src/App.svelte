@@ -13,9 +13,9 @@
 
     let count = 0;
 
-    function easterEgg(){
-        count ++;
-        if(count >= 5){
+    function easterEgg() {
+        count++;
+        if (count >= 5) {
             window.location.href = "./vid.mp4";
         }
     }
@@ -31,6 +31,14 @@
             </div>
         </header>
         <section>
+            <div class="cardContainer">
+                <Card><h1>soon™</h1></Card>
+                <Card><h1>soon™</h1></Card>
+                <Card><h1>soon™</h1></Card>
+                <Card><h1>soon™</h1></Card>
+                <Card><h1>soon™</h1></Card>
+                <Card><h1>soon™</h1></Card>
+            </div>
         </section>
     </main>
 {/if}
@@ -50,17 +58,30 @@
         flex-direction: column;
     }
 
-    header,section {
+    header {
         display: grid;
         place-items: center;
-        max-height: 600px;
+        height: 75vh;
+        background-color: #222;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
     }
 
     main {
-        width: 100vw;
-        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+    }
+    .cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
     }
 

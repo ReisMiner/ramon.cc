@@ -1,9 +1,11 @@
-<script></script>
+<script>
+</script>
 <section>
-
+<slot></slot>
 </section>
+
 <style>
-    section{
+    section {
         margin: 10px;
         height: 300px;
         width: 500px;
