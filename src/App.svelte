@@ -32,12 +32,12 @@
         </header>
         <section>
             <div class="cardContainer">
-                <Card><h1>soon™</h1></Card>
-                <Card><h1>soon™</h1></Card>
-                <Card><h1>soon™</h1></Card>
-                <Card><h1>soon™</h1></Card>
-                <Card><h1>soon™</h1></Card>
-                <Card><h1>soon™</h1></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
             </div>
         </section>
     </main>
@@ -46,6 +46,8 @@
 <style>
     h1 {
         margin: 0;
+        font-size: 3.2rem;
+        line-height: 1.1;
     }
 
     strong {
@@ -53,7 +55,7 @@
         font-weight: bold;
     }
 
-    div {
+    header div {
         display: flex;
         flex-direction: column;
     }
@@ -78,7 +80,8 @@
         justify-content: center;
         padding: 100px;
     }
-    .cardContainer{
+
+    .cardContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
