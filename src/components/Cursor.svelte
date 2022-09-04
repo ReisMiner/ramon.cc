@@ -1,11 +1,7 @@
 <script>
     import jQuery from "jquery";
-    //import {cursorVisible} from "./stores";
 
     let privVisible;
-    // cursorVisible.subscribe(function (value){
-    //     privVisible = value;
-    // })
 
     let Cursor = null;
 
@@ -16,12 +12,8 @@
     document.addEventListener("mousemove", moveCursor)
 
     function moveCursor(e) {
-        let x = e.pageX;
-        let y = e.pageY;
-        Cursor.style.left = x + 'px';
-        Cursor.style.top = y + 'px';
-        Cursor.style.left = x - 33 + 'px';
-        Cursor.style.top = y - 39 + 'px';
+        Cursor.style.left = e.clientX - 33 + 'px';
+        Cursor.style.top = e.clientY - 39 + 'px';
     }
 
 </script>
@@ -37,7 +29,7 @@
         z-index: 100;
         width: 70px;
         height: 70px;
-        position: absolute;
+        position: fixed;
         pointer-events: none;
         opacity: var(--visible);
     }
