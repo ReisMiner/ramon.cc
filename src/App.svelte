@@ -58,12 +58,21 @@
     header div {
         display: flex;
         flex-direction: column;
+        width: max-content;
+    }
+
+    @media only screen and (max-width: 382px) {
+        header div{
+            text-align: center;
+        }
     }
 
     header {
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 75vh;
+        padding: 10px;
         background-color: #222;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 

@@ -16,6 +16,7 @@
         margin: 10px;
         height: 300px;
         width: 500px;
+        max-width: 90vw;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
         padding: 20px 10px 10px;
     }
