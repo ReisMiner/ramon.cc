@@ -40,6 +40,9 @@
                 <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
             </div>
         </section>
+        <section>
+           <h1>Uh some links ig</h1>
+        </section>
     </main>
 {/if}
 <Cursor/>
@@ -88,6 +91,8 @@
         display: flex;
         justify-content: center;
         padding: 100px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
     }
 
     .cardContainer {
