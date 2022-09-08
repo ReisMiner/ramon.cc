@@ -31,17 +31,18 @@
             </div>
         </header>
         <section>
+            <h1 class="section-header">Skills / Projects (need to decide)</h1>
             <div class="cardContainer">
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon soon soon" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
             </div>
         </section>
         <section>
-           <h1>Uh some links ig</h1>
+            <h1>Uh some links ig</h1>
         </section>
     </main>
 {/if}
@@ -51,6 +52,9 @@
         margin: 0;
         font-size: 3.2rem;
         line-height: 1.1;
+    }
+    .section-header{
+        margin-bottom: 5vh;
     }
 
     strong {
@@ -65,7 +69,7 @@
     }
 
     @media only screen and (max-width: 382px) {
-        header div{
+        header div {
             text-align: center;
         }
     }
@@ -90,6 +94,8 @@
     section {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 100px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
 
