@@ -4,6 +4,7 @@
     import {fly} from 'svelte/transition'
     import Cursor from "./components/Cursor.svelte";
     import Card from "./components/Card.svelte";
+    import SocialLink from "./components/SocialLink.svelte";
 
     let animate = false
 
@@ -42,7 +43,13 @@
             </div>
         </section>
         <section>
-            <h1>Uh some links ig</h1>
+            <h1 class="section-header">Uh some links ig</h1>
+            <div class="cardContainer">
+                <SocialLink text="YouTube" lnk="https://youtube.com/ReisMiner"></SocialLink>
+                <SocialLink text="Twitter" lnk="https://twitter.com/ReisMiner"></SocialLink>
+                <SocialLink text="Github" lnk="https://github.com/ReisMiner"></SocialLink>
+                <SocialLink text="Discord" lnk="https://discord.com/users/215136536260378624"></SocialLink>
+            </div>
         </section>
     </main>
 {/if}
@@ -53,7 +60,8 @@
         font-size: 3.2rem;
         line-height: 1.1;
     }
-    .section-header{
+
+    .section-header {
         margin-bottom: 5vh;
     }
 
