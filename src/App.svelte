@@ -24,7 +24,7 @@
 </script>
 {#if animate}
     <main>
-        <header transition:fade="{{duration:800}}">
+        <header transition:fade="{{duration:800}}" class="darker">
             <div>
                 <h1 on:click={easterEgg}>Hoi</h1>
                 <h1>I'm <strong>Ramon</strong></h1>
@@ -32,14 +32,25 @@
             </div>
         </header>
         <section>
-            <h1 class="section-header">Skills / Projects (need to decide)</h1>
+            <h1 class="section-header">Projects</h1>
             <div class="cardContainer">
-                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
                 <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
                 <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
-                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./pepe.png"></Card>
                 <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any projects :(" img="./pepe.png"></Card>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-header">Skills</h1>
+            <div class="cardContainer">
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
+                <Card head="soon™" text="soon... or maybe I don't have any skillz :(" img="./borpa.png"></Card>
             </div>
         </section>
         <section>
@@ -65,6 +76,10 @@
         margin-bottom: 5vh;
     }
 
+    .darker{
+        background-color: #222;
+    }
+
     strong {
         color: coral;
         font-weight: bold;
@@ -88,7 +103,6 @@
         align-items: center;
         height: 75vh;
         padding: 10px;
-        background-color: #222;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
     }
